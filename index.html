@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <title >Frontend Mentor | QR code component</title>
+  <link rel="icon" href="images\favicon-32x32.jpg">
+  <style>
+
+@font-face {
+    font-family:Outfit;
+    src: url(https://fonts.google.com/specimen/Outfit);
+
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(137, 173, 249); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0b84f5; 
+}
+
+
+    .attribution {
+         font-family:'Outfit'; 
+         text-align: center;
+         padding-top: 200px;
+        
+    }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    .image-qr-code img
+    {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      bottom: 15px;
+      
+      cursor: pointer;
+      border-radius: 10%;
+    
+    }
+
+.TextContent{
+  margin: -6px;
+}
+    .TextContent h1
+    {
+    font-family:'Outfit';
+    font-size: 15px;
+    text-align: center;
+    }
+
+    .TextContent h2
+    {
+    font-family: 'Outfit';
+    color:hsl(220, 15%, 55%) ;
+    font-size: 11px;
+    font-weight: 400;
+    text-align: center;
+    }
+
+    .Square_All 
+    {
+      border-radius: 6%;
+      height: 340px;
+      width: 220px;
+      margin: auto;
+      background-color: white;
+    }
+
+     .Little-Body
+     {
+      margin-top: 80px;
+      align-content: center;
+      background-color: hsl(212, 45%, 89%);
+     }
+ 
+  </style>
+  
+
+</head>
+
+<body class="Little-Body">
+  <nav>
+  <div class="Square_All">   
+    <div class="image-qr-code">
+      <img id="image-qr-code" src="images\image-qr-code.jpg" width="200px" height="200px"  >
+    </div>
+
+  <div class="TextContent" >
+  <h1>
+    Improve your front-end <br> 
+    skills by building projects<br>
+    <h2>
+    Scan the QR code to visit Frontend<br>
+     Mentor and take your coding skills to <br>
+     the next level
+    </h2>
+    </a>
+  </h1> 
+  </div>
+
+
+</a>
+</div>
+
+</body>
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="https://twitter.com/evertonmellos"  target="_blank">Everton Mello</a>.
+</div>
+</nav>
+</html>
