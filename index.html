@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+</html lan="pt-br">
   
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+ <!-- add lines api fonts is a feedback by @newtothis90 community member -->
   <title >Frontend Mentor | QR code component</title>
-  <link rel="icon" href="images\favicon-32x32.jpg">
+  <link rel="icon" href="images/favicon-32x32.jpg">
+
+
   <style>
-
-@font-face {
-    font-family:Outfit;
-    src: url(https://fonts.google.com/specimen/Outfit);
-
-}
 
 /* width */
 ::-webkit-scrollbar {
@@ -35,29 +35,34 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #0b84f5; 
 }
-    .attribution {
-         font-family:'Outfit'; 
-         text-align: center;
-         padding-top: 200px;
-        
-    }
+
+
+
+    .attribution  {
+      font-family:'Outfit';
+      position:fixed;/*lines add and learn about propriet*/
+    bottom: 0;/*lines add*/
+    width: 100%;/*lines add*/
+    height: 40px;/*lines add*/
+    text-align: center;/*lines add*/
+    padding: 10px;/*lines add*/
+     }
+
     .attribution a { color: hsl(228, 45%, 44%); }
 
-    .image-qr-code img
-    {
+    .image-qr-code img {
       display: flex;
       justify-content: center;
       padding: 10px;
       bottom: 15px;
-      
       cursor: pointer;
       border-radius: 10%;
     
     }
 
-.TextContent{
-  margin: -6px;
-}
+    .TextContent{
+   margin: -6px;
+    }
     .TextContent h1
     {
     font-family:'Outfit';
@@ -83,45 +88,43 @@
       background-color: white;
     }
 
-     .Little-Body
-     {
-      margin-top: 80px;
-      align-content: center;
+     .Body {
+      min-height: 100vh;
+      display: flex; /*was a tip by @_nehal community member*/
+      align-items: center;
+      justify-content: center;  
       background-color: hsl(212, 45%, 89%);
+    
      }
- 
   </style>
   
 
 </head>
-<body class="Little-Body">
-  <nav>
+<body class="Body">
+<main class="Main">
   <div class="Square_All">   
     <div class="image-qr-code">
-      <img id="image-qr-code" src="images\image-qr-code.jpg" width="200px" height="200px"  >
+      <img id="image-qr-code" src="images/image-qr-code.jpg"  alt= "QR code to frontend mentor website" max-width="200px" height="200px"  >
     </div>
-
   <div class="TextContent" >
-  <h1>
+   <h1>
     Improve your front-end <br> 
     skills by building projects<br>
     <h2>
-    Scan the QR code to visit Frontend<br>
+     Scan the QR code to visit Frontend<br>
      Mentor and take your coding skills to <br>
      the next level
     </h2>
-    </a>
-  </h1> 
+   </h1> 
   </div>
 
-
-</a>
 </div>
+</main>
+<footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://twitter.com/evertonmellos"  target="_blank">Everton Mello</a>.
+  
+</footer>
 </body>
-<div class="attribution">
-  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-  Coded by <a href="https://twitter.com/evertonmellos"  target="_blank">Everton Mello</a>.
-</div>
 
-<hello></hello>
 </html>
